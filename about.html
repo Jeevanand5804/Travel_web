@@ -4,14 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <title>About Us - Travel Explorer</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+         body {
+            font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #f9f9f9, #e6f7ff);
+    color: #2c3e50;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+        }
+
+        #about {
+            max-width: 900px;
+            margin: 100px auto 50px;
+            padding: 20px;
+            background: linear-gradient(to right, #f9f9f9, #e6f7ff);
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        .about-content {
+            text-align: left;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background: #4CAF50;
+            color: white;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        a:hover {
+            background: #45a049;
+        }
+
+        @media (max-width: 768px) {
+            #about {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- About Us Section -->
     <section id="about">
         <h1>About Us</h1>
-        <p>At Travel Explorer, our mission is to inspire and guide travelers by providing curated destination recommendations based on your preferences.</p>
+        <p>At <strong>Travel Explorer</strong>, we are passionate about making your travel dreams a reality. Our mission is to inspire and guide travelers by providing curated destination recommendations based on your preferences.</p>
+
+        <div class="about-content">
+            <h2>Our Vision</h2>
+            <p>We believe in making travel accessible and enjoyable for everyone. Whether you're an adventure seeker or a leisure traveler, our platform provides personalized itineraries tailored to your interests.</p>
+
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Curated travel guides for popular and offbeat destinations.</li>
+                <li>Personalized recommendations based on your preferences.</li>
+                <li>Trusted reviews and insider tips from seasoned travelers.</li>
+                <li>Seamless travel planning experience with user-friendly tools.</li>
+            </ul>
+
+            <h2>Join Our Community</h2>
+            <p>Connect with fellow travelers, share your experiences, and explore new horizons with us. Your next adventure is just a click away!</p>
+        </div>
+
         <a href="travelWeb.html">Back to Home</a>
     </section>
 </body>
