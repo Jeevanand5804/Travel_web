@@ -4,72 +4,75 @@
     <meta charset="UTF-8">
     <title>Travel Explorer</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <!-- Navigation Bar -->
-    
-         <nav>
-             <ul>
-                 <li id="h2">Travel</li>
-                 <li><a href="#home">Home</a></li>
-                 <li><a href="about.html" target="_self">About Us</a></li>
-                 <li><a href="#contact">Contact Us</a></li>
-             </ul>
-         </nav>
+    <nav>
+        <ul>
+            <li id="h2">Travel</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html" target="_self">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
 
+    <!-- Search Bar -->
+    
     <!-- Home Page -->
     <section id="home">
         <h1>Welcome to Travel Explorer</h1>
         <p>Discover your next adventure with personalized travel recommendations.</p>
+        
+        <section id="search-section">
+            <input type="text" id="search-bar" placeholder="Search destinations like (Temple,beach,country)...">
+            <button onclick="searchImages()">Search</button>
+        </section>
 
-        <h2>Beach Recommendations</h2>
-        <div>
-           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrJWabKLgdfS-ROpnjGYoWJZr9HTHAJwbnQ&s" alt="">
-           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVAZXQ8hqASpILACg3tpdCz5kG24VX3e_Jcw&s" alt="">
+        <h2 class="title" id="beach-title">Beach Recommendations</h2>
+        <div id="beach-images" class="image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrJWabKLgdfS-ROpnjGYoWJZr9HTHAJwbnQ&s" alt="Beach 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVAZXQ8hqASpILACg3tpdCz5kG24VX3e_Jcw&s" alt="Beach 2">
         </div>
 
-        <h2>Temple Recommendations</h2>
-        <div>
+        <h2 class="title" id="temple-title">Temple Recommendations</h2>
+        <div id="temple-images" class="image-container">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRslX2Ykvj5PO7gEudBWtMF7nXK8fMSNX8xEg&s" alt="Ancient Temple">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK9tEDcL3jTAI7SGouh3LvsnWphyR4NlP4kQ&s" alt="Majestic Temple">
         </div>
 
-        <h2>Country Recommendations</h2>
-        <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRADf0F0s7gGO1GG2OYJL39O0VUq3AUJbtW-A&s" alt="">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxqG37fTigAlzt2rvkwhN0cvzrh9MIfkrsrw&s" alt="">
+        <h2 class="title" id="country-title">Country Recommendations</h2>
+        <div id="country-images" class="image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRADf0F0s7gGO1GG2OYJL39O0VUq3AUJbtW-A&s" alt="Country 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxqG37fTigAlzt2rvkwhN0cvzrh9MIfkrsrw&s" alt="Country 2">
         </div>
     </section>
 
     <!-- Contact Us Page -->
     <section id="contact">
         <h1>Contact Us</h1>
-        <form action="#" method="post">
+        <form id="contact-form" action="#" method="post">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <button type="submit">Submit</button>
-        </form>
+        </form>        
     </section>
     
-<!-- Footer Section -->
-<footer>
-    <div class="footer-container">
-        <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#contact">Contact Us</a>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
+            <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
         </div>
-
-        <div class="footer-social">
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.twitter.com" target="_blank">Twitter</a>
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </div>
-
-        <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
-    </div>
-</footer>
-
-    <script src="script.js"></script>
+    </footer>
 </body>
 </html>
