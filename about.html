@@ -1,97 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>About Us - Travel Explorer</title>
     <style>
-         body {
-            font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: linear-gradient(to right, #f9f9f9, #e6f7ff);
-    color: #2c3e50;
-    line-height: 1.6;
-    scroll-behavior: smooth;
-        }
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: linear-gradient(to right, #f9f9f9, #e6f7ff);
+        color: #2c3e50;
+        line-height: 1.6;
+        scroll-behavior: smooth;
+      }
 
+      #about {
+        max-width: 900px;
+        margin: 100px auto 50px;
+        padding: 20px;
+        background: linear-gradient(to right, #f9f9f9, #e6f7ff);
+        text-align: center;
+      }
+
+      h1 {
+        color: #2c3e50;
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin: 20px 0;
+      }
+
+      .about-content {
+        text-align: left;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        text-decoration: none;
+        background: #4caf50;
+        color: white;
+        border-radius: 8px;
+        transition: background 0.3s;
+      }
+
+      a:hover {
+        background: #45a049;
+      }
+
+      @media (max-width: 768px) {
         #about {
-            max-width: 900px;
-            margin: 100px auto 50px;
-            padding: 20px;
-            background: linear-gradient(to right, #f9f9f9, #e6f7ff);
-            text-align: center;
+          padding: 15px;
         }
 
         h1 {
-            color: #2c3e50;
-            font-size: 2.5rem;
+          font-size: 2rem;
         }
 
         p {
-            font-size: 1.2rem;
-            margin: 20px 0;
+          font-size: 1rem;
         }
+      }
+      .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
 
-        .about-content {
-            text-align: left;
-        }
+.member {
+    text-align: center;
+    width: 200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            text-decoration: none;
-            background: #4CAF50;
-            color: white;
-            border-radius: 8px;
-            transition: background 0.3s;
-        }
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
 
-        a:hover {
-            background: #45a049;
-        }
+.member h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
 
-        @media (max-width: 768px) {
-            #about {
-                padding: 15px;
-            }
+.member p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
 
-            h1 {
-                font-size: 2rem;
-            }
+.member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
 
-            p {
-                font-size: 1rem;
-            }
-        }
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+}
+
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <section id="about">
-        <h1>About Us</h1>
-        <p>At <strong>Travel Explorer</strong>, we are passionate about making your travel dreams a reality. Our mission is to inspire and guide travelers by providing curated destination recommendations based on your preferences.</p>
+      <h1>About Us</h1>
+      <p>
+        At <strong>Travel Explorer</strong>, we are passionate about making your
+        travel dreams a reality. Our mission is to inspire and guide travelers
+        by providing curated destination recommendations based on your
+        preferences.
+      </p>
 
-        <div class="about-content">
-            <h2>Our Vision</h2>
-            <p>We believe in making travel accessible and enjoyable for everyone. Whether you're an adventure seeker or a leisure traveler, our platform provides personalized itineraries tailored to your interests.</p>
-
-            <h2>Why Choose Us?</h2>
-            <ul>
-                <li>Curated travel guides for popular and offbeat destinations.</li>
-                <li>Personalized recommendations based on your preferences.</li>
-                <li>Trusted reviews and insider tips from seasoned travelers.</li>
-                <li>Seamless travel planning experience with user-friendly tools.</li>
-            </ul>
-
-            <h2>Join Our Community</h2>
-            <p>Connect with fellow travelers, share your experiences, and explore new horizons with us. Your next adventure is just a click away!</p>
+      <h2>Meet Our Team</h2>
+      <div class="team-members">
+        <div class="member">
+          <img src="data:image/jpeg;base64,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" alt="Team Member 1" />
+          <h3>John Doe</h3>
+          <p>Founder & CEO</p>
         </div>
+        <div class="member">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO-4ErLLnYqZ8d5a1Rvs_GiUFWt9UkpA3vnQ&s" alt="Team Member 2" />
+          <h3>Jane Smith</h3>
+          <p>Lead Travel Advisor</p>
+        </div>
+        <!-- Add more team members as needed -->
+      </div>
+      <div class="about-content">
+        <h2>Our Vision</h2>
+        <p>
+          We believe in making travel accessible and enjoyable for everyone.
+          Whether you're an adventure seeker or a leisure traveler, our platform
+          provides personalized itineraries tailored to your interests.
+        </p>
 
-        <a href="travelWeb.html">Back to Home</a>
+        <h2>Why Choose Us?</h2>
+        <ul>
+          <li>Curated travel guides for popular and offbeat destinations.</li>
+          <li>Personalized recommendations based on your preferences.</li>
+          <li>Trusted reviews and insider tips from seasoned travelers.</li>
+          <li>Seamless travel planning experience with user-friendly tools.</li>
+        </ul>
+
+        <h2>Join Our Community</h2>
+        <p>
+          Connect with fellow travelers, share your experiences, and explore new
+          horizons with us. Your next adventure is just a click away!
+        </p>
+      </div>
+
+      <a href="travelWeb.html">Back to Home</a>
     </section>
-</body>
-
+  </body>
 </html>

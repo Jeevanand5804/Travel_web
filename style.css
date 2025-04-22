@@ -1,3 +1,4 @@
+/* General Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -9,6 +10,7 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Navigation Bar Styling */
 nav {
     background: #4CAF50;
     padding: 1em 0;
@@ -29,7 +31,8 @@ nav ul {
     display: flex;
     justify-content: flex-end;
 }
-nav ul #h2{
+
+nav ul #h2 {
     list-style: none;
     padding: 0;
     font-size: 20px;
@@ -54,6 +57,7 @@ nav ul li a:hover {
     color: #d4edda;
 }
 
+/* Home Section Styling */
 section {
     padding: 70px 20px;
     max-width: 1200px;
@@ -66,6 +70,7 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
+/* Image Container Styling */
 div img {
     width: 45%;
     margin: 20px 2%;
@@ -78,6 +83,42 @@ div img:hover {
     transform: scale(1.05);
 }
 
+/* Search Bar & Button Styling */
+#search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#search-bar {
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    width: 300px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#search-bar:focus {
+    border-color: #45a049;
+}
+
+button {
+    padding: 12px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: 10px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Contact Form Styling */
 form {
     display: flex;
     flex-direction: column;
@@ -103,16 +144,6 @@ input:focus {
     border-color: #45a049;
 }
 
-button {
-    padding: 12px 20px;
-    background: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
 /* Footer Styling */
 footer {
     background-color: #4CAF50;
@@ -129,7 +160,7 @@ footer {
     gap: 10px;
 }
 
-/* Footer Links */
+/* Footer Links Styling */
 .footer-links a,
 .footer-social a {
     color: white;
@@ -143,23 +174,33 @@ footer {
     color: #ffcc00;
 }
 
-/* Footer Text */
+/* Footer Text Styling */
 footer p {
     margin: 10px 0 0;
     font-size: 14px;
 }
 
-
-button:hover {
-    background: #45a049;
-}
-
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
+        align-items: center;
     }
 
     div img {
         width: 90%;
+    }
+
+    #search-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search-bar {
+        width: 80%;
+    }
+
+    button {
+        margin-top: 10px;
     }
 }

@@ -73,3 +73,14 @@ function searchImages() {
         document.getElementById("country-title").style.display = "block";
     }
 }
+
+function clearSearch() {
+    // Get the search input field by its ID
+    const searchBar = document.getElementById('search-bar');
+    
+    // Set the value of the search bar to an empty string, clearing it
+    searchBar.value = '';
+    
+    // Optionally, you can hide all images and titles when the clear button is clicked
+    hideAllImages();
+}
